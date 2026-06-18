@@ -1,7 +1,8 @@
 import { defineConfig } from '@rspack/cli';
 import { rspack } from '@rspack/core';
+import { withZephyr } from 'zephyr-rspack-plugin';
 
-export default defineConfig({
+const config = defineConfig({
   entry: {
     main: './src/index.jsx',
   },
@@ -42,3 +43,5 @@ export default defineConfig({
     hot: true,
   },
 });
+
+export default withZephyr()(config);
