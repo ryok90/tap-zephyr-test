@@ -1,0 +1,19 @@
+{
+  "name": "rspack-react-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@rspack/cli": "^1.0.0",
+    "@rspack/core": "^1.0.0"
+  }
+}
